@@ -1,0 +1,13 @@
+package com.broketopia.broketopiabackend;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BroketopiaBackendApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
