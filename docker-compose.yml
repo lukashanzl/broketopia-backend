@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: broketopia-postgres
+    environment:
+      POSTGRES_DB: broketopia
+      POSTGRES_USER: broketopia
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - broketopia_pgdata:/var/lib/postgresql/data
+
+volumes:
+  broketopia_pgdata:
